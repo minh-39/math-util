@@ -2,8 +2,8 @@ package com.tumi.mathutil.core;
 
 public class MathUtil {
     public static long getFactorial(int n) {
-        long result = 10; //CỐ TINH THỬ XEM GITHUB ACTIONS CÓ PHÁT HIỆN RA CODE LỖI LOGIC HAY KO
-
+        long result = 1; //CỐ TINH đổi sang 10 THỬ XEM GITHUB ACTIONS CÓ PHÁT HIỆN RA CODE LỖI LOGIC HAY KO
+        //fix lại từ 10 thành 1để passed testcase, để thấy màu xanh trên github
         if (n < 0 || n > 20) {
             throw new IllegalArgumentException("Invalid n. n must be between 0 and 20");
         }
